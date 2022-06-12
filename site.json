@@ -1,5 +1,5 @@
 {
-    "voltacms" : {
+    "voltadigitalcms" : {
         "comment" : "Hey there! Thanks for using Volta Digital CMS. This is the config file, for help check out https://docs.voltadigital.io/cms/configfile. YOU MUST PUT ALL PAGES BELOW IN ORDER TO WORK PROPERLY. ANY POSTS (in /site/posts) DO NOT NEED TO BE THERE UNLESS CUSTOM PERMALINK",
         "blog" : true,
         "pages" : [

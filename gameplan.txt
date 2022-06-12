@@ -1,11 +1,11 @@
-find and get json
-parse json into js dict
-change settings
-create header/footer
-load markdown
-create html body
-create css
-change css
-change body hiding loading
+✅    find and get json 
+✅    parse json into js dict
+    change settings
+    create header/footer
+    load markdown
+    create html body
+    create css
+    change css
+    change body hiding loading
 
-add console.logs that look good.
+    add console.logs that look good.
