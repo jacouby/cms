@@ -6,7 +6,7 @@
         "pages" : [
             {
                 "routes":["/","/home"],
-                "homepage": true,
+                "pagetype" : "home",
                 "markdown" : "home.md"
             }
         ]
