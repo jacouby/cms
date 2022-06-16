@@ -81,10 +81,11 @@
     vdcmslog('Started Script')
     var href = window.location.href,
         link = String(href).replace('index.html','')
-        vdcmslog('JSON load started')
+    vdcmslog('JSON load started')
     if (!link.endsWith('/')) {
       var link = link + '/'
     }
+    var slink = link + 'site/'
     $.get(`${link}site.json`, function( data ) {
       console.log( data );
       var site = data.voltadigitalcms;
@@ -92,7 +93,15 @@
       vdcmslog('JSON load completed');
       $(document).attr("title", site.title);
       site.pages.forEach(page => {
-        console.log(page)
+        page.routes.forEach(route =>{
+          if (route == window.location.href) {
+            $.get(`${slink}/${page.markdown}`, function( data ) {
+              var converter = new showdown.Converter()
+
+              $('body').html(converter.makeHtml(data))
+            })
+          }
+        })
       });
     })
     
